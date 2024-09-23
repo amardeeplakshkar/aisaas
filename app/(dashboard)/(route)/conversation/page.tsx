@@ -74,7 +74,7 @@ const page = () => {
         label="Conversation"
         description="Conversational AI"
       />
-      <div className="relative h-[78.5dvh] w-screen flex justify-center">
+      <div className="relative h-[78.5dvh] flex justify-center">
         <div className="absolute bottom-5 left-center flex gap-2 items-center">
           <Input
             type="text"
@@ -93,7 +93,7 @@ const page = () => {
             <Send size="25" />
           </Button>
         </div>
-        <div className="chat-container flex-1 overflow-y-scroll bg-white p-4 rounded-lg shadow-lg max-h-[100dvh] pb-[3rem]">
+        <div className="flex-1 rounded-lg shadow-lg max-h-[100dvh] pb-[3rem] ">
           {messages.map((message, index) => (
             <div
               key={index}
@@ -102,7 +102,7 @@ const page = () => {
               } mb-4`}
             >
               <div
-                className={`p-4 items-center gap-2 flex rounded-lg ${
+                className={`p-4 items-center gap-2 flex rounded-[20px] ${
                   message.type === "user"
                     ? "bg-blue-500 text-white"
                     : "bg-gray-200"
@@ -114,7 +114,7 @@ const page = () => {
                 <Markdown
                   components={{
                     pre: ({ node, ...props }) => (
-                      <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
+                      <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-[10rem]">
                         <pre {...props} />
                       </div>
                     ),

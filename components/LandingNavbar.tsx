@@ -31,11 +31,11 @@ export const LandingNavbar = () => {
       </Link>
 
       <div className="flex items-center gap-x-2">
-        <Button variant="outline" className="rounded-full" asChild>
+        <Button variant="outline" className="rounded-full text-white" asChild>
           <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>Get Started</Link>
         </Button>
 
-        <Button className="rounded-full" asChild>
+        <Button className="rounded-full text-white" asChild>
           <Link
             href={links.sourceCode}
             target="_blank"
