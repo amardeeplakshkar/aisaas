@@ -74,7 +74,7 @@ const page = () => {
         label="Conversation"
         description="Conversational AI"
       />
-      <div className="relative h-[78.5dvh] flex justify-center">
+      <div className="relative h-[78.5dvh] flex justify-center overflow">
         <div className="absolute bottom-5 left-center flex gap-2 items-center">
           <Input
             type="text"
@@ -93,7 +93,7 @@ const page = () => {
             <Send size="25" />
           </Button>
         </div>
-        <div className="flex-1 rounded-lg shadow-lg max-h-[100dvh] pb-[3rem] ">
+        <div className="flex-1 rounded-lg shadow-lg max-h-[100dvh] pb-[3rem] overflow-x-auto">
           {messages.map((message, index) => (
             <div
               key={index}
